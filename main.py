@@ -14,16 +14,5 @@ while True:
       print("That person hasn't won yet!")
   else:
     winners.append(whoWon)
-
-  #check for amount of wins per player
-  for winner in winners:
-    #checks how many times each player is in the list
-    for winner in winners:
-      
-
-
-
-
-
   for winner in winners:
     print(winner)
