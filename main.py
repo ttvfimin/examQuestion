@@ -1,17 +1,15 @@
 #5 & 6 & 7
-winners = []
+win_dict = {
+
+}
 while True:
   number = 0
   whoWon = input("Who has won this match?\n> ").title()
   if whoWon == "End":
     break
-  elif whoWon == "Remove":
-    whoRemove = input("Who do you want to remove?\n> ").title()
-    try:
-      winners.remove(whoRemove)
-    except ValueError:
-      print("That person hasn't won yet!")
+  if winner in win_dict.keys():
+    win_dict[winner] += 1
   else:
-    winners.append(whoWon)
-  for winner in winners:
-    print(winner)
+    win_dict[winner] = 1
+  for key,value in win_dict.items():
+    print('{} {}wins'.format(key,value))
