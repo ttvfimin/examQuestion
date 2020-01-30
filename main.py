@@ -1,6 +1,5 @@
 #5 & 6 & 7
 winners = []
-winnersNum = []
 while True:
   number = 0
   whoWon = input("Who has won this match?\n> ").title()
